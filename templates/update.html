@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UpdateApp</title>
+    <style>
+        .todo {
+            padding: 20px;
+            margin: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+   <h1>UPDATE TO_DO</h1>
+    <hr>
+    <div class="content">
+    <form method="POST" action="/update/{{val.Id}}">
+        <p>
+            <b><label for="update">Todo content</label></b>
+        </p>
+        <p>
+            <input type="text" name="update"
+                placeholder="Todo Content" value="{{val.Task}}"></input>
+        </p>
+
+        
+        <button type="submit">Update</button>
+        <!-- <a href="/read">Read Data</a> -->
+    </form>
+    <div>
+    	
+    </div>
+    </div>
+</body>
+</html>

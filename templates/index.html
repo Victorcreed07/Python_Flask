@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+
+{% block hell%}
+<h1>FLASK TODO</h1>
+{% endblock %}
+
+{% block nodata %}
+<div class="content">
+	<h3>List of Tasks</h3>
+	{%for i in output%}
+    	<ul>
+    		<li>{{ i.Task }}</li>
+    		<li>{{ i.Degree }}</li>
+    		<a href="/delete/{{i.Id}}">Delete</a>
+    		<a href="/update/{{i.Id}}">Update</a>
+    	</ul>
+	{%endfor%}
+</div>
+{% endblock %}
